@@ -15,17 +15,16 @@ function Validador() {
     }
 
     resto = (soma * 10) % 11
-    if (resto == 11 || resto == 10) {
-      resto = 0
-    }
-
+    if (resto == 11 || resto == 10) resto = 0
+    
     if (replaceCpf[10] == resto) {
       this.texto.classList.remove("invalido")
       this.texto.innerHTML = `O seu Cpf de número ${replaceCpf} é válido`
     } else {
       this.texto.classList.add("invalido")
-      this.texto.innerHTML = `O seu Cpf de número ${replaceCpf} é inválido`
+      this.texto.innerHTML = `O seu Cpf é inválido`
     }
+
   })
 
 

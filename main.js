@@ -42,7 +42,6 @@ validar.addEventListener('click', function () {
   } else {
     texto.classList.add("invalido")
     texto.innerHTML = `O seu Cpf de numero ${replaceCpf} é inválido`
-
   }
 })
 

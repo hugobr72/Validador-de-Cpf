@@ -38,10 +38,10 @@ function Validador() {
 
     if (replaceCpf[10] == resto) {
       this.texto.classList.remove("invalido")
-      this.texto.innerHTML = `O seu Cpf de numero ${replaceCpf} é válido`
+      this.texto.innerHTML = `O seu Cpf de número ${replaceCpf} é válido`
     } else {
       this.texto.classList.add("invalido")
-      this.texto.innerHTML = `O seu Cpf de numero ${replaceCpf} é inválido`
+      this.texto.innerHTML = `O seu Cpf de número ${replaceCpf} é inválido`
     }
   })
 
